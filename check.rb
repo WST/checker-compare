@@ -94,7 +94,7 @@ out_list = []
 workers = []
 threads = []
 
-(0..99).each do |i|
+100.times do |i|
 	workers << RoskomWorker.new(in_list, out_list, i)
 end
 
